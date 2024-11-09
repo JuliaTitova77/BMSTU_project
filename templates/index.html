@@ -1,0 +1,135 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+  "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+ <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>Прогнозирование размеров сварного шва</title>
+</head>
+<body style="background-image: url('https://s.iimg.su/s/09/rNTByqt6B28uAt0tQrpnPgc2RoIDXcwSUPxmEZaI.jpg'); background-size: 100% 200%; background-repeat: no-repeat; background-color: #00005c;">
+
+<h3 class="text-muted" style="text-align: left;">
+  <span style="color: #ffffff;">
+    <span style="font-size: 16px;">
+      <span style="font-family: 'Times New Roman', Times, serif;">
+        <em>Прогнозирование размеров сварного шва</em>
+      </span>
+    </span>
+  </span>
+</h3>
+
+<table bgcolor="navy" border="3" cellpadding="5" cellspacing="5" width="500px" style="text-align: left;">
+	<tbody>
+		<tr>
+			<th align="left">
+				<span style="font-family: 'Times New Roman', Times, serif; color: #ffffff; font-size: 25px;">
+					Прогнозирование размеров сварного шва<br />
+					при электронно-лучевой сварке тонкостенных конструкций аэрокосмического назначения
+				</span>
+			</th>
+		</tr>
+		<tr>
+			<th align="left">
+				<span style="font-size: 22px; font-family: 'Times New Roman', Times, serif; color: #ffffff;">
+					Заполните ячейки и нажмите "Готово"
+				</span>
+			</th>
+		</tr>
+	</tbody>
+</table>
+
+<form action="" method="post">
+<table bgcolor="navy" border="3" cellpadding="5" cellspacing="5" width="500px" style="text-align: left;">
+	<tbody>
+		<tr>
+			<td>
+				<span style="font-size: 16px; font-family: 'Times New Roman', Times, serif; color: #ffffff;">
+					<label for="IW">Величина сварочного тока (IW)</label>
+				</span>
+			</td>
+			<td>
+				<input type="float" name="IW" placeholder="Заполните значение величины сварочного тока (IW)" style="font-size: 16px; font-family: 'Times New Roman', Times, serif;" />
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<span style="font-size: 16px; font-family: 'Times New Roman', Times, serif; color: #ffffff;">
+					<label for="IF">Ток фокусировки электронного пучка (IF)</label>
+				</span>
+			</td>
+			<td>
+				<input name="IF" placeholder="Заполните значение тока фокусировки электронного пучка (IF)" type="float" style="font-size: 16px; font-family: 'Times New Roman', Times, serif;" />
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<span style="font-size: 16px; font-family: 'Times New Roman', Times, serif; color: #ffffff;">
+					<label for="VW">Скорость сварки (VW)</label>
+				</span>
+			</td>
+			<td>
+				<input name="VW" placeholder="Заполните значение скорости сварки (VW)" type="float" style="font-size: 16px; font-family: 'Times New Roman', Times, serif;" />
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<span style="font-size: 16px; font-family: 'Times New Roman', Times, serif; color: #ffffff;">
+					<label for="FP">Расстояние от поверхности до электронно-оптической системы (FP)</label>
+				</span>
+			</td>
+			<td>
+				<input name="FP" placeholder="Заполните значение расстояния от поверхности до электронно-оптической системы (FP)" type="float" style="font-size: 16px; font-family: 'Times New Roman', Times, serif;" />
+			</td>
+		</tr>
+	</tbody>
+</table>
+<table bgcolor="navy" border="3" cellpadding="5" cellspacing="5" width="500px" style="text-align: left;">
+<tbody>
+	<tr>
+		<td>
+			<p style="text-align: center; font-size: 14px; font-family: 'Times New Roman', Times, serif;">
+				<input type="submit" value="Готово" />
+			</p>
+		</td>
+	</tr>
+</tbody>
+</table>
+</form>
+
+
+
+<table bgcolor="navy" border="3" cellpadding="5" cellspacing="5" width="500px" style="text-align: left;">
+	<tbody>
+		<tr>
+			<th align="left">
+				<span style="font-family: 'Times New Roman', Times, serif; color: #ffffff; font-size: 18px;">
+					Результат прогноза:
+				</span>
+			</th>
+		</tr>
+	</tbody>
+</table>
+
+<table bgcolor="navy" border="3" cellpadding="5" cellspacing="5" width="500px" style="text-align: left;">
+	<tbody>
+		<tr>
+			<th align="left">
+				<span style="font-family: 'Times New Roman', Times, serif; color: #ffffff;">
+					{% if message %}
+					<p>{{ message }}</p>
+					{% endif %}
+				</span>
+			</th>
+		</tr>
+	</tbody>
+</table>
+
+<div style="text-align: left;">
+	<p>
+		<span style="color: #ffffff; font-family: 'Times New Roman', Times, serif;">
+			<em>Приложение разработано:</em> <strong>Юлией Титовой</strong> - курс &laquo;Data Engineer&raquo; ЦДО МГТУ им. Н.Э. Баумана &copy; 2024 г.
+		</span>
+	</p>
+</div>
+
+</body>
+</html>
